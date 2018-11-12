@@ -9,7 +9,7 @@ This is an example of TODO web application based on Node.js and MongoDB.
 
 ## Installation
 
-1. Clone the repository: `https://github.com/Una13/TODO-App.git`
+1. Clone the repository: `https://github.com/Una13/todo-list.git`
 2. Install the application: `npm install`
 3. Install apidoc: `npm install apidoc -g`
 4. Generate apidoc: `npm run-script doc`

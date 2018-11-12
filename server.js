@@ -19,7 +19,6 @@ if(process.env.NODE_ENV === 'test'){
 
 // Create database connection
 let dbConfig = global.config.mongodb.host + global.config.mongodb.db;
-mongoose.set('useCreateIndex', true);
 mongoose.connect(dbConfig, {useNewUrlParser: true}, function (err) {
   if (err) {
     logger.error("Mongodb connection error: " + JSON.stringify(err));

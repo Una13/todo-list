@@ -39,7 +39,7 @@ let router  = express.Router();
  *      }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00003",
@@ -47,7 +47,7 @@ let router  = express.Router();
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00002",
@@ -55,7 +55,7 @@ let router  = express.Router();
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00001",
@@ -63,7 +63,7 @@ let router  = express.Router();
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 500
  *     {
  *          "status": "500",
  *          "errorCode": "00010",
@@ -109,7 +109,7 @@ router.post("/task/create",  RouteValidator.task.create(), RouteHandler.register
  *      }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00002",
@@ -117,7 +117,7 @@ router.post("/task/create",  RouteValidator.task.create(), RouteHandler.register
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00001",
@@ -125,7 +125,7 @@ router.post("/task/create",  RouteValidator.task.create(), RouteHandler.register
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 500
  *     {
  *          "status": "500",
  *          "errorCode": "00010",
@@ -163,7 +163,7 @@ router.put("/task/update", RouteValidator.task.update(), RouteHandler.register(t
  *      }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00002",
@@ -171,7 +171,7 @@ router.put("/task/update", RouteValidator.task.update(), RouteHandler.register(t
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00001",
@@ -179,7 +179,7 @@ router.put("/task/update", RouteValidator.task.update(), RouteHandler.register(t
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 500
  *     {
  *          "status": "500",
  *          "errorCode": "00010",
@@ -223,7 +223,7 @@ router.delete("/task/remove", RouteValidator.task.remove(), RouteHandler.registe
  *      }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00002",
@@ -231,7 +231,7 @@ router.delete("/task/remove", RouteValidator.task.remove(), RouteHandler.registe
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00001",
@@ -239,7 +239,7 @@ router.delete("/task/remove", RouteValidator.task.remove(), RouteHandler.registe
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 500
  *     {
  *          "status": "500",
  *          "errorCode": "00010",

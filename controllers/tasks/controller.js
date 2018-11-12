@@ -115,6 +115,11 @@ module.exports = {
     }
   },
 
+  /**
+   * Get task based on _id
+   * @param req
+   * @returns {*}
+   */
   get: function (req) {
     logger.debug("[TaskController][get]");
     let query = req.query;
@@ -144,6 +149,11 @@ module.exports = {
   }
 };
 
+/**
+ * Send email when all tasks are resolved
+ * @param userAddress
+ * @returns {Promise<any>}
+ */
 function sendEmail(userAddress){
   logger.info("[TaskController][sendEmail] Profile address " + userAddress);
 

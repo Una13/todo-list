@@ -37,7 +37,7 @@ let router  = express.Router();
  *      }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00002",
@@ -45,7 +45,7 @@ let router  = express.Router();
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00001",
@@ -53,7 +53,7 @@ let router  = express.Router();
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 500
  *     {
  *          "status": "500",
  *          "errorCode": "00010",
@@ -86,7 +86,7 @@ router.post("/profile/create", RouteValidator.profile.create(), RouteHandler.reg
  *      }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 500
  *     {
  *          "status": "500",
  *          "errorCode": "00010",
@@ -94,7 +94,7 @@ router.post("/profile/create", RouteValidator.profile.create(), RouteHandler.reg
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00002",
@@ -123,7 +123,7 @@ router.get("/profile/get", RouteHandler.register(profileController.get));
  *      }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 500
  *     {
  *          "status": "500",
  *          "errorCode": "00010",
@@ -131,7 +131,7 @@ router.get("/profile/get", RouteHandler.register(profileController.get));
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00002",
@@ -169,7 +169,7 @@ router.delete("/profile/remove", RouteHandler.register(profileController.remove)
  *      }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00002",
@@ -177,7 +177,7 @@ router.delete("/profile/remove", RouteHandler.register(profileController.remove)
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 400
  *     {
  *          "status": "400",
  *          "errorCode": "00001",
@@ -185,7 +185,7 @@ router.delete("/profile/remove", RouteHandler.register(profileController.remove)
  *     }
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 200 OK
+ *     HTTP/1.1 500
  *     {
  *          "status": "500",
  *          "errorCode": "00010",
